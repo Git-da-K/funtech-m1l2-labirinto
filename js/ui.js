@@ -28,9 +28,9 @@ export function initUI() {
 
 // === HUD ===
 export function updateHUD() {
-  State.dom.scoreDisplay.textContent = `Score: ${State.score}`;
-  State.dom.levelBadge.textContent   = `Level: ${State.level}`;
-  State.dom.levelTitle.textContent   = `Level ${State.level}`;
+  State.dom.scoreDisplay.textContent = `Pontuação: ${State.score}`;
+  State.dom.levelBadge.textContent   = `Nível: ${State.level}`;
+  State.dom.levelTitle.textContent   = `Nívell ${State.level}`;
 }
 
 export function renderLives() {
