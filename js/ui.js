@@ -30,7 +30,7 @@ export function initUI() {
 export function updateHUD() {
   State.dom.scoreDisplay.textContent = `Pontuação: ${State.score}`;
   State.dom.levelBadge.textContent   = `Nível: ${State.level}`;
-  State.dom.levelTitle.textContent   = `Nívell ${State.level}`;
+  State.dom.levelTitle.textContent   = `Nível ${State.level}`;
 }
 
 export function renderLives() {
@@ -51,7 +51,7 @@ export function showLevelOverlay() { updateHUD(); renderLives(); show(State.dom.
 export function hideLevelOverlay() { hide(State.dom.levelOverlay); }
 
 export function showGameOver(level) {
-  State.dom.lostLevelText.textContent = `You lost on level ${level}`;
+  State.dom.lostLevelText.textContent = `Você perdeu o nível ${level}`;
   show(State.dom.gameOverOverlay);
 }
 export function hideGameOver() { hide(State.dom.gameOverOverlay); }
