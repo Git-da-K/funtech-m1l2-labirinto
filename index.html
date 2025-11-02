@@ -3,51 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Maze M2</title>
+  <title>Labirinto</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <!-- Главный старт
   <div id="startOverlay" class="overlay">
-    <h1>Лабиринт</h1>
-    <div class="footer-info">Разработчик: Andrei Pabiarzhyn • FunTech Projects</div>
-    <button id="startButton">Новая игра</button>
+    <h1>Labirinto</h1>
+    <div class="footer-info">Desenvolvedor: Andrei Pabiarzhyn • FunTech Projects</div>
+    <button id="startButton">Novo jogo</button>
   </div>-->
 
   <!-- Старт уровня -->
   <div id="levelOverlay" class="overlay" style="display:none;">
-    <h1 id="levelTitle">Level 1</h1>
-    <p class="sub">You have 3 lives. Good luck!</p>
-    <button id="levelStartButton">Start</button>
+    <h1 id="levelTitle">Nível 1</h1>
+    <p class="sub">Você tem 3 vidas. Boa sorte!</p>
+    <button id="levelStartButton">Iniciar</button>
   </div>
 
   <!-- Окно поражения (жизни кончились) -->
   <div id="gameOverOverlay" class="overlay" style="display:none;">
-    <h1>Oops, try again!</h1>
-    <p class="sub" id="lostLevelText">You lost on level 1</p>
-    <button id="gameOverOk">OK</button>
+    <h1>Ops, tente novamente!</h1>
+    <p class="sub" id="lostLevelText">Você perdeu o nível 1</p>
+    <button id="gameOverOk">Ok</button>
   </div>
 
   <!-- Окно финальной победы -->
   <div id="victoryOverlay" class="overlay" style="display:none;">
-    <h1>Victory!</h1>
+    <h1>Vitória!</h1>
     <img id="victoryImage"
          src="assets/win.gif"
-         alt="Victory!">
-    <button id="closeVictory">Close</button>
+         alt="Vitória!">
+    <button id="closeVictory">Fechar</button>
   </div>
 
   <!-- Игра -->
   <div class="game-container">
     <div class="hud">
-      <div id="levelBadge">Level: 1</div>
-      <div id="scoreDisplay">Score: 0</div>
+      <div id="levelBadge">Nível: 1</div>
+      <div id="scoreDisplay">Pontuação: 0</div>
       <div id="lives" class="lives"></div>
     </div>
 
     <canvas id="mazeCanvas"></canvas>
-    <div class="footer-info">Developer: Andrei Pabiarzhyn • FunTech Projects</div>
+    <div class="footer-info">Desenvolvedor: Andrei Pabiarzhyn • FunTech Projects</div>
   </div>
 
   <script type="module" src="./js/main.js"></script>
